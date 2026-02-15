@@ -1,0 +1,23 @@
+package com.taskflow.dto;
+
+import com.taskflow.model.User;
+
+import java.time.LocalDateTime;
+
+public record UserResponse(
+    Long id,
+    String name,
+    String email,
+    Boolean isActive,
+    LocalDateTime createdAt
+) {
+    public static UserResponse from(User user) {
+        return new UserResponse(
+            user.getId(),
+            user.getName(),
+            user.getEmail(),
+            user.getIsActive(),
+            user.getCreatedAt()
+        );
+    }
+}
