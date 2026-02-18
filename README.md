@@ -24,7 +24,7 @@ Asegúrate de tener instalados:
 ### 1. Clonar el Repositorio
 
 ```bash
-git clone <URL_DEL_REPOSITORIO>
+git clone https://github.com/Lorotiki/BoxCustodia_Task.git
 cd BoxCustodia_Auth
 ```
 
